@@ -44,7 +44,7 @@ total = 0
 
 for mass in data:
     sum = 0
-    while mass > 5:
+    while True:
         fuel = int(mass / 3) - 2
         
         if  fuel <= 0:
@@ -53,8 +53,6 @@ for mass in data:
         mass = fuel
 
     total += sum
-print(sum)
-
 
 # 966 + 50346 = 51312
 print(total)
